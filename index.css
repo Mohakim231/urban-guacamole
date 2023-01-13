@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url('https://th.bing.com/th/id/OIP.1vHZjQKARHf5bO7WhD1P0AHaBI?w=375&h=58&c=7&r=0&o=5&pid=1.7');
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    width: screen;
+    top: 0;
+    width: 100%;
+}
+header nav{
+    background-color: #138BBE;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+}
+header nav div{
+    border: none;
+}
+header nav div.login{
+    display: flex;
+}
+header nav div.login img{
+    margin-top: 0.6em;
+    margin-left: 3em;
+}
+header nav div.login img:hover{
+    cursor: pointer;
+}
+header nav section select{
+    border:none;
+    appearance: none;
+    background-color: #138BBE;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.8em 0em 0em 0.5em;
+}
+header nav section select:hover{
+    cursor: pointer;
+}
+header nav section h4{
+    margin: 0.1em 0 1em 0.5em;
+}
+header nav form{
+    margin: 0 5em 0 0;
+    padding: 0.6em 0 0.2em 0.2em;
+}
+header nav form input{
+    vertical-align: middle;
+    padding: 0.2em 15em 0.2em 0.2em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+}
+header div{
+    border-bottom: 1px solid black;
+}
+header div ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10em 30px 10em;
+    list-style: none;
+    font-size: 2em;
+    color: white;
+}
+header div li{
+    border-radius: 0.5em;
+    padding: 0.8em 0.6em 0.8em 0.6em;
+}
+header div li:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+header div li:nth-child(1){
+    background-color: turquoise;
+}
+header div li:nth-child(2){
+    background-color: #FFA500;
+}
+header div li:nth-child(3){
+    background-color: #AD3A16;
+}
+header div li:nth-child(4){
+    background-color: #bf00ff;
+}
+header div li:nth-child(5){
+    background-color: #B7B239;
+}
+header div li:nth-child(6){
+    background-color: #3C923A;
+}
+main{
+    margin-top: 15em;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main ul li{
+    display: flex;
+    margin: 4em 8em 0em 6em;
+    white-space: nowrap;
+}
+main ul li img.foodimg{
+    border-radius: 2.5em;
+    width: 334px;
+    height: 180px;
+}
+main ul li div.restinfo{
+    margin-left: 4em;
+}
+main ul li div.restinfo h1{
+    margin: 0;
+}
+main ul li div.restdelivery{
+    margin-left: 8em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height: 50px;
+    background-color: #138BBE;
+}
+footer h3{
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 2000px){
+    main ul{
+        grid-template-columns: 1fr;
+    }
+    header div ul{
+        margin: 30px 1em 30px 1em;
+    }
+}
